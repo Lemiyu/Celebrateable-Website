@@ -2,13 +2,11 @@
 
 import { initNav } from './nav.js';
 import { initAnimations } from './animations.js';
+import { initFaq } from './faq.js';
+import { initMap } from './map.js';
+import { initContact } from './contact.js';
+import { initLegalNav } from './legal.js';
 
-document.addEventListener('DOMContentLoaded', () => {
-  initNav();
-  initAnimations();
-  initDonation();
-  initFaq();
-});
 
 /* Donation module */
 const initDonation = () => {
@@ -53,36 +51,12 @@ const initDonation = () => {
   }
 };
 
-/* FAQ accordion */
-const initFaq = () => {
-  const questions = document.querySelectorAll('.lmy-faq__question');
-
-  if (!questions.length) return;
-
-  questions.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const isOpen = btn.getAttribute('aria-expanded') === 'true';
-      const answer = btn.nextElementSibling;
-
-      // Close all
-      questions.forEach(q => {
-        q.setAttribute('aria-expanded', 'false');
-        if (q.nextElementSibling) q.nextElementSibling.hidden = true;
-      });
-
-      // Open clicked if it was closed
-      if (!isOpen) {
-        btn.setAttribute('aria-expanded', 'true');
-        answer.hidden = false;
-      }
-    });
-
-    // Keyboard support
-    btn.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        btn.click();
-      }
-    });
-  });
-};
+document.addEventListener('DOMContentLoaded', () => {
+  initNav();
+  initAnimations();
+  initDonation();
+  initFaq();
+  initMap();
+  initContact();
+  initLegalNav();
+});

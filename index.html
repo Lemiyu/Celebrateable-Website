@@ -18,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Organization","name":"CelebrateAble","alternateName":"Inclusive Entertainment Group CIC","url":"https://celebrateable.co.uk","email":"info@celebrateable.co.uk","foundingDate":"2026","founder":{"@type":"Person","name":"Ben Kelly"},"areaServed":"United Kingdom"}
   </script>
@@ -33,13 +34,13 @@
         </a>
         <ul class="lmy-nav__links" id="nav-links" role="list">
           <li><a href="/" aria-current="page">Home</a></li>
-          <li><a href="pages/about.html">About</a></li>
-          <li><a href="pages/events.html">Events</a></li>
-          <li><a href="pages/services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="services.html">Services</a></li>
         </ul>
         <div class="lmy-nav__cta">
-          <a href="#grow" class="lmy-button lmy-button--primary">Support Us</a>
-          <a href="pages/get-a-quote.html" class="lmy-button lmy-button--accent">Get a Quote</a>
+          <a href="support.html" class="lmy-button lmy-button--primary">Support Us</a>
+          <a href="contact.html" class="lmy-button lmy-button--accent">Contact Us</a>
         </div>
         <button class="lmy-nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open navigation menu" type="button">
           <span></span><span></span><span></span>
@@ -47,12 +48,12 @@
       </div>
       <div class="lmy-nav__mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation">
         <a href="/">Home</a>
-        <a href="pages/about.html">About</a>
-        <a href="pages/events.html">Events</a>
-        <a href="pages/services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="services.html">Services</a>
         <div class="lmy-nav__mobile-cta">
-          <a href="#grow" class="lmy-button lmy-button--secondary">Support Us</a>
-          <a href="pages/get-a-quote.html" class="lmy-button lmy-button--accent">Get a Quote</a>
+          <a href="support.html" class="lmy-button lmy-button--secondary">Support Us</a>
+          <a href="contact.html" class="lmy-button lmy-button--accent">Contact Us</a>
         </div>
       </div>
     </nav>
@@ -98,19 +99,19 @@
 </section>
 
 
+
     <!-- ===== WHY WE EXIST — white ===== -->
     <section class="lmy-section" aria-labelledby="problem-heading">
       <div class="lmy-container">
         <div class="lmy-problem-layout">
           <div class="lmy-fade-in">
-            <p class="lmy-section-label">Why we exist</p>
             <h2 class="lmy-problem__heading" id="problem-heading">We know what it feels like to be <em>left out.</em></h2>
             <div class="lmy-content-stack">
               <p>Most families aren't looking for an event. They're looking for somewhere they fit in. Somewhere they don't have to explain their child.</p>
               <p class="lmy-content-stack--accent">CelebrateAble exists to change that.</p>
             </div>
             <div class="lmy-mt-2xl">
-              <a href="pages/about.html" class="lmy-button lmy-button--primary">Read Our Story</a>
+              <a href="about.html" class="lmy-button lmy-button--primary">Read Our Story</a>
             </div>
           </div>
           <div class="lmy-fade-in">
@@ -125,10 +126,9 @@
 
 
     <!-- ===== WHAT WE DO — white ===== -->
-    <section class="lmy-section lmy-section--alt" aria-labelledby="services-heading">
+    <section class="lmy-section lmy-section--alt-orange" aria-labelledby="services-heading">
       <div class="lmy-container">
-        <div class="lmy-section-header lmy-text-center lmy-fade-in">
-          <p class="lmy-section-label">What we do</p>
+        <div class="lmy-section-header lmy-text-left lmy-fade-in">
           <h2 id="services-heading">Inclusion built in from the start.</h2>
         </div>
         <div class="lmy-grid">
@@ -149,7 +149,7 @@
               <span class="lmy-badge lmy-badge--primary">Private</span>
               <h3>Private Events</h3>
               <p class="lmy-text-secondary">Weddings and parties where access comes first.</p>
-              <a href="pages/get-a-quote.html" class="lmy-button lmy-button--secondary">Get a Quote</a>
+              <a href="pages/contact-us.html" class="lmy-button lmy-button--secondary">Contact Us</a>
             </div>
           </div>
           <div class="lmy-service-card lmy-service-card--corporate lmy-fade-in">
@@ -159,7 +159,7 @@
               <span class="lmy-badge lmy-badge--primary">Corporate</span>
               <h3>Corporate Events</h3>
               <p class="lmy-text-secondary">Inclusive events for organisations that mean it.</p>
-              <a href="pages/get-a-quote.html" class="lmy-button lmy-button--secondary">Get a Quote</a>
+              <a href="pages/contact-us.html" class="lmy-button lmy-button--secondary">Contact Us</a>
             </div>
           </div>
         </div>
@@ -167,12 +167,14 @@
     </section>
 
 
+
+
     <!-- ===== COMMUNITY — bold teal, thin ===== -->
     <section class="lmy-section--blue lmy-section--blue-thin lmy-community-section" aria-labelledby="community-heading">
       <div class="lmy-community-ring" aria-hidden="true"></div>
-      <div class="lmy-container--narrow">
+      <div class="lmy-container">
         <div class="lmy-community-inner lmy-fade-in">
-          <p class="lmy-section-label">Our community</p>
+          <p class="lmy-section-label">Join Our community</p>
           <h2 id="community-heading">You are not the only family feeling this way.</h2>
           <a href="pages/events.html" class="lmy-button lmy-button--blue">Join Our Community</a>
         </div>
@@ -186,7 +188,6 @@
     <section class="lmy-section" aria-labelledby="events-heading" id="events">
       <div class="lmy-container">
         <div class="lmy-section-header lmy-text-center lmy-fade-in">
-          <p class="lmy-section-label">What's coming up</p>
           <h2 id="events-heading">Upcoming Events</h2>
         </div>
         <div class="lmy-grid">
@@ -224,13 +225,27 @@
 
 
 
+        <!-- ===== EVENTS MAP — white ===== -->
+    <section class="lmy-section lmy-section--alt-orange" aria-labelledby="map-heading">
+      <div class="lmy-container">
+        <div class="lmy-section-header lmy-text-left lmy-fade-in">
+          <h2 id="map-heading">Find us near you.</h2>
+          <p>We're building events right across the Midlands. Tap a pin to see what's happening.</p>
+        </div>
+        <div id="events-map" class="lmy-map" role="application" aria-label="Map of upcoming CelebrateAble events across the Midlands"></div>
+      </div>
+    </section>
+
+
+    
+
+
 
 
         <!-- ===== WHO WE HELP — light teal ===== -->
-    <section class="lmy-section lmy-section--alt" aria-labelledby="who-heading">
+    <section class="lmy-section lmy-section--alt-orange" aria-labelledby="who-heading">
       <div class="lmy-container">
         <div class="lmy-section-header lmy-text-center lmy-fade-in">
-          <p class="lmy-section-label">Who we help</p>
           <h2 id="who-heading">For families tired of feeling invisible.</h2>
         </div>
         <div class="lmy-usp-grid">
@@ -257,7 +272,6 @@
         </div>
       </div>
     </section>
-
 
 
 
@@ -296,7 +310,6 @@
           </div>
         </div>
       </div>
-    </div>
     </section>
 
 
@@ -304,19 +317,14 @@
 
 
 
-
-
-
-
     <!-- ===== BEN'S STORY — light teal ===== -->
-    <section class="lmy-section lmy-section--alt" aria-labelledby="story-heading">
+    <section class="lmy-section" aria-labelledby="story-heading">
       <div class="lmy-container">
-        <div class="lmy-split">
+        <div class="lmy-story-split">
           <div class="lmy-story__media lmy-fade-in">
             <img src="assets/images/benkelly.webp" alt="Ben Kelly, founder of CelebrateAble" class="lmy-story__img" loading="lazy">
           </div>
           <div class="lmy-stack lmy-fade-in">
-            <p class="lmy-section-label">Our story</p>
             <h2 class="lmy-story__heading" id="story-heading">It didn't make him bitter. It made him determined.</h2>
             <p>Ben Kelly founded CelebrateAble in 2026 from lived experience. As a disabled person, he spent years on the outside looking in, facing the isolation so many disabled and neurodivergent people know too well.</p>
             <p>So he started building the spaces he wished had existed. Places where belonging isn't a special occasion, it's simply normal.</p>
@@ -337,10 +345,9 @@
 
 
     <!-- ===== HELP US GROW — light teal ===== -->
-    <section class="lmy-section lmy-section--alt" id="grow" aria-labelledby="grow-heading">
+    <section class="lmy-section lmy-section--alt-orange" id="grow" aria-labelledby="grow-heading">
       <div class="lmy-container">
         <div class="lmy-section-header lmy-text-center lmy-fade-in">
-          <p class="lmy-section-label">Support us</p>
           <h2 id="grow-heading">Help us grow.</h2>
         </div>
         <div class="lmy-grow-layout">
@@ -351,11 +358,11 @@
             </div>
             <div class="lmy-grow-card">
               <h3>Volunteer</h3>
-              <a href="pages/get-a-quote.html" class="lmy-button lmy-button--secondary lmy-button--full">Get Involved</a>
+              <a href="pages/contact-us.html" class="lmy-button lmy-button--secondary lmy-button--full">Get Involved</a>
             </div>
             <div class="lmy-grow-card">
               <h3>Partner</h3>
-              <a href="pages/get-a-quote.html" class="lmy-button lmy-button--secondary lmy-button--full">Partner With Us</a>
+              <a href="pages/contact-us.html" class="lmy-button lmy-button--secondary lmy-button--full">Partner With Us</a>
             </div>
           </div>
           <div class="lmy-donate lmy-fade-in" id="donate-box">
@@ -380,40 +387,41 @@
       </div>
     </section>
 
-    <!-- ===== FAQ — white ===== -->
+
+    
+<!-- ===== FAQ — white ===== -->
     <section class="lmy-section" aria-labelledby="faq-heading">
       <div class="lmy-container">
-        <div class="lmy-section-header lmy-text-left lmy-fade-in">
-          <p class="lmy-section-label">Good to know</p>
+        <div class="lmy-section-header lmy-text-center lmy-fade-in">
           <h2 id="faq-heading">Frequently Asked Questions</h2>
         </div>
         <div class="lmy-faq-list lmy-fade-in" id="faq-list">
           <div class="lmy-faq-item">
             <button class="lmy-faq__question" aria-expanded="false" type="button">What makes CelebrateAble events different?<svg class="lmy-faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></button>
-            <div class="lmy-faq__answer" hidden><p>Our events are designed with disabled and neurodivergent people at the centre from the very beginning, not adapted at the last minute. Sensory considerations, accessible venues, understanding staff, and a community of people who simply get it.</p></div>
+            <div class="lmy-faq__answer"><div><p>Our events are designed with disabled and neurodivergent people at the centre from the very beginning, not adapted at the last minute. Sensory considerations, accessible venues, understanding staff, and a community of people who simply get it.</p></div></div>
           </div>
           <div class="lmy-faq-item">
             <button class="lmy-faq__question" aria-expanded="false" type="button">Who can come to CelebrateAble events?<svg class="lmy-faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></button>
-            <div class="lmy-faq__answer" hidden><p>Our community events are open to disabled and neurodivergent children, young people, adults and their families. You don't need a formal diagnosis to attend.</p></div>
+            <div class="lmy-faq__answer"><div><p>Our community events are open to disabled and neurodivergent children, young people, adults and their families. You don't need a formal diagnosis to attend.</p></div></div>
           </div>
           <div class="lmy-faq-item">
             <button class="lmy-faq__question" aria-expanded="false" type="button">Do you offer support beyond events?<svg class="lmy-faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></button>
-            <div class="lmy-faq__answer" hidden><p>Yes. We're building a signposting page with links to trusted organisations and official guidance. In the meantime, <a href="pages/get-a-quote.html">get in touch</a> and we'll point you in the right direction.</p></div>
+            <div class="lmy-faq__answer"><div><p>Yes. We're building a signposting page with links to trusted organisations and official guidance. In the meantime, <a href="pages/contact-us.html">get in touch</a> and we'll point you in the right direction.</p></div></div>
           </div>
           <div class="lmy-faq-item">
             <button class="lmy-faq__question" aria-expanded="false" type="button">How can my organisation get involved?<svg class="lmy-faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></button>
-            <div class="lmy-faq__answer" hidden><p>We work with schools, local authorities, charities and businesses. Whether you want to host an inclusive event, sponsor our work or partner with us, <a href="pages/get-a-quote.html">we'd love to hear from you.</a></p></div>
+            <div class="lmy-faq__answer"><div><p>We work with schools, local authorities, charities and businesses. Whether you want to host an inclusive event, sponsor our work or partner with us, <a href="pages/contact-us.html">we'd love to hear from you.</a></p></div></div>
           </div>
           <div class="lmy-faq-item">
             <button class="lmy-faq__question" aria-expanded="false" type="button">Are you looking for volunteers?<svg class="lmy-faq__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></button>
-            <div class="lmy-faq__answer" hidden><p>Always. No experience necessary, just a genuine heart for inclusion. <a href="pages/get-a-quote.html">Get in touch to find out more.</a></p></div>
+            <div class="lmy-faq__answer"><div><p>Always. No experience necessary, just a genuine heart for inclusion. <a href="pages/contact-us.html">Get in touch to find out more.</a></p></div></div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ===== PARTNERS — white ===== -->
-    <section class="lmy-section" aria-labelledby="partners-heading">
+    <section class="lmy-section lmy-section--alt-orange" aria-labelledby="partners-heading">
       <div class="lmy-container">
         <div class="lmy-section-header lmy-text-center lmy-fade-in">
           <p class="lmy-section-label">Partners &amp; sponsors</p>
@@ -442,12 +450,13 @@
       </div>
     </section>
 
+
   </main>
 
   <!-- ORANGE CTA BAR -->
   <div class="lmy-cta-bar" role="complementary" aria-label="Quick support link">
     <div class="lmy-cta-bar__inner">
-      <p>Need support or looking to get involved? <a href="pages/get-a-quote.html">Get in touch &rsaquo;</a></p>
+      <p>Need support or looking to get involved? <a href="pages/contact-us.html">Get in touch &rsaquo;</a></p>
     </div>
   </div>
 
@@ -473,7 +482,7 @@
             <li><a href="pages/about.html">About</a></li>
             <li><a href="pages/events.html">Events</a></li>
             <li><a href="pages/services.html">Services</a></li>
-            <li><a href="pages/get-a-quote.html">Get a Quote</a></li>
+            <li><a href="pages/contact-us.html">Contact Us</a></li>
           </ul>
         </div>
         <div>
@@ -489,7 +498,7 @@
       <div class="lmy-footer__bottom">
         <p>&copy; 2026 Inclusive Entertainment Group CIC. Company No. 17112577. Registered in England &amp; Wales.</p>
         <nav class="lmy-footer__legal" aria-label="Legal pages">
-          <a href="pages/privacy-policy.html">Privacy Policy</a>
+          <a href="privacy.html">Privacy Policy</a>
           <a href="pages/terms-and-conditions.html">Terms &amp; Conditions</a>
           <a href="pages/accessibility-statement.html">Accessibility</a>
           <a href="pages/cookie-policy.html">Cookie Policy</a>
@@ -501,6 +510,7 @@
   <script src="assets/js/nav.js" type="module"></script>
   <script src="assets/js/animations.js" type="module"></script>
   <script src="assets/js/main.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 
 </body>
 </html>
