@@ -3039,3 +3039,54 @@ p {
 .lmy-crisis-card .lmy-button {
   margin-top: var(--lmy-space-sm);
 }
+
+
+/* ============================================================
+   Cookie consent banner
+   ============================================================ */
+.lmy-cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--lmy-z-overlay);
+  background-color: var(--lmy-color-bg-surface);
+  border-top: var(--lmy-border-width) var(--lmy-border-style) var(--lmy-color-border-primary);
+  box-shadow: var(--lmy-shadow-card);
+  padding: var(--lmy-space-md);
+}
+
+.lmy-cookie-banner[hidden] {
+  display: none;
+}
+
+.lmy-cookie-banner__inner {
+  max-width: var(--lmy-container-max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--lmy-space-md);
+  align-items: flex-start;
+}
+
+.lmy-cookie-banner__text {
+  margin: 0;
+  font-size: var(--lmy-font-size-body-sm);
+  color: var(--lmy-color-text-primary);
+}
+
+.lmy-cookie-banner__actions {
+  display: flex;
+  gap: var(--lmy-space-sm);
+  flex-shrink: 0;
+}
+
+/* Tablet and up: text left, buttons right on one row */
+@media (min-width: 768px) {
+  .lmy-cookie-banner__inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
