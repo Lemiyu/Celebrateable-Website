@@ -6,11 +6,11 @@
   <title>Contact Us — CelebrateAble</title>
   <meta name="description" content="Get in touch with CelebrateAble. Whether you're looking for support, want to attend an event, volunteer or partner with us, we'd love to hear from you.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://celebrateable.co.uk/contact">
+  <link rel="canonical" href="https://celebrateable.co.uk/contact.html">
   <meta property="og:title" content="Contact Us — CelebrateAble">
   <meta property="og:description" content="We'd love to hear from you. Get in touch with CelebrateAble.">
   <meta property="og:image" content="https://celebrateable.co.uk/assets/images/celebrateable-hero-banner.webp">
-  <meta property="og:url" content="https://celebrateable.co.uk/contact">
+  <meta property="og:url" content="https://celebrateable.co.uk/contact.html">
   <meta property="og:type" content="website">
   <link rel="icon" type="image/webp" href="../assets/images/celebrateable-favicon.webp">
   <link rel="apple-touch-icon" href="../assets/images/celebrateable-favicon.webp">
@@ -18,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/base.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
 
@@ -91,10 +92,12 @@
               <span class="lmy-contact-details__value"><a href="mailto:info@celebrateable.co.uk">info@celebrateable.co.uk</a></span>
               <span class="lmy-contact-details__value"><a href="mailto:ben@celebrateable.co.uk">ben@celebrateable.co.uk</a></span>
             </div>
+            <!-- Commented for now 
             <div class="lmy-contact-details__block">
               <span class="lmy-contact-details__label">Prefer to talk?</span>
               <a href="#" class="lmy-button lmy-button--accent lmy-width-auto" target="_blank" rel="noopener noreferrer">Book a Call</a>
             </div>
+            -->
             <div class="lmy-contact-details__block">
               <span class="lmy-contact-details__label">Follow us</span>
               <div class="lmy-contact-social" aria-label="Social media links">
@@ -154,6 +157,11 @@
               <div class="lmy-form__consent">
                 <input type="checkbox" id="contact-consent" name="consent" required>
                 <label for="contact-consent">I agree that Inclusive Entertainment Group CIC may use this information to respond to my enquiry. We will never share your details with third parties.</label>
+              </div>
+
+              <div class="lmy-form__hp" aria-hidden="true">
+                <label for="contact-website">Leave this field blank</label>
+                <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off">
               </div>
 
               <button type="submit" class="lmy-button lmy-button--primary lmy-button--full">Send Message</button>
@@ -234,6 +242,7 @@
   <script src="../assets/js/nav.js" type="module"></script>
   <script src="../assets/js/animations.js" type="module"></script>
   <script src="../assets/js/main.js" type="module"></script>
+  <script src="../assets/js/forms.js" type="module"></script>
 
 </body>
 </html>
