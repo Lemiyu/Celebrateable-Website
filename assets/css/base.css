@@ -3049,7 +3049,7 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: var(--lmy-z-overlay);
+  z-index: 99999;
   background-color: var(--lmy-color-bg-surface);
   border-top: var(--lmy-border-width) var(--lmy-border-style) var(--lmy-color-border-primary);
   box-shadow: var(--lmy-shadow-card);

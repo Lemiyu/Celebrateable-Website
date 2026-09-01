@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://celebrateable.co.uk/sitemap.xml
